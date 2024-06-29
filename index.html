@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AG's Gym</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg') no-repeat;
+        background-size: 100%;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        left: 75px;
+        position: absolute;
+        top: 12px;
+
+    }
+
+
+    .left img {
+        width: 85px;
+        height: 50px;
+        filter: invert(90%);
+        margin: auto 24px;
+    }
+
+    .left div {
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 2;
+    }
+
+    .mid {
+        /* border: 2px solid blue; */
+        display: block;
+        width: 36%;
+        margin: 25px auto;
+
+
+    }
+
+    .right {
+        /* border: 2px solid green; */
+        display: inline-block;
+        right: 32px;
+        position: absolute;
+        top: 33px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 21px;
+    }
+
+    .navbar li a {
+        color: white;
+        margin: 12px;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: grey;
+        text-decoration: underline;
+    }
+
+    .btn {
+        background-color: rgb(58, 54, 54);
+        color: white;
+        margin: 5px;
+        padding: 5px 22px;
+        border: 2px solid black;
+        border-radius: 15px;
+        font-weight: bold;
+    }
+
+    .btn:hover {
+        background-color: black;
+        cursor: pointer;
+    }
+
+    .container {
+        border: 3px solid white;
+        width: 30%;
+        margin: 112px 72px;
+        padding: 0px 19px;
+        border-radius: 15px;
+
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .form-group input {
+        padding: 3px;
+        border: 2px solid black;
+        border-radius: 6px;
+        display: block;
+        width: 277px;
+        margin: 5px auto;
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+    }
+
+    .container button {
+        text-align: center;
+        display: block;
+        width: 289px;
+        margin: 12px auto;
+        border-radius: 6px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>AG Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best Gym of Ayodhya.</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Localty">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter Your Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter Your Email ID">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
